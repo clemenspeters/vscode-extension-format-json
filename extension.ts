@@ -1,21 +1,19 @@
-import * as vscode from 'vscode';
+import { commands, ExtensionContext, languages, window } from 'vscode';
 
-export function activate(context: vscode.ExtensionContext) {
+export function activate(context: ExtensionContext) {
   const command = 'extension.formatJSON';
 
-  const commandHandler = (name: string = 'world') => {
+  const commandHandler = () => {
     const languageId = 'json';
-    const activeEditor = vscode.window.activeTextEditor;
+    const activeEditor = window.activeTextEditor;
 
     if (!activeEditor) {
       return;
     }
 
-    vscode.languages.setTextDocumentLanguage(activeEditor.document, languageId);
-    vscode.commands.executeCommand('editor.action.formatDocument');
+    languages.setTextDocumentLanguage(activeEditor.document, languageId);
+    commands.executeCommand('editor.action.formatDocument');
   };
 
-  context.subscriptions.push(
-    vscode.commands.registerCommand(command, commandHandler)
-  );
+  context.subscriptions.push(commands.registerCommand(command, commandHandler));
 }
