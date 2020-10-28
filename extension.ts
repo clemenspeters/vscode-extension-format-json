@@ -4,7 +4,15 @@ export function activate(context: vscode.ExtensionContext) {
   const command = 'extension.formatJSON';
 
   const commandHandler = (name: string = 'world') => {
-    console.log(`Hello ${name}!!!`);
+    const languageId = 'json';
+    const activeEditor = vscode.window.activeTextEditor;
+
+    if (!activeEditor) {
+      return;
+    }
+
+    vscode.languages.setTextDocumentLanguage(activeEditor.document, languageId);
+    vscode.commands.executeCommand('editor.action.formatDocument');
   };
 
   context.subscriptions.push(
