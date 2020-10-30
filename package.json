@@ -1,7 +1,7 @@
 {
 	"name": "format-json",
 	"displayName": "vscode JSON formatter",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"publisher": "ClemensPeters",
 	"description": "Convert file to file type json and format content.",
 	"author": {
