@@ -1,50 +1,50 @@
 {
-  "name": "format-json",
-  "displayName": "vscode JSON formatter",
-  "version": "1.0.0",
-  "publisher": "ClemensPeters",
-  "description": "Convert file to file type json and format content.",
-  "author": {
-    "name": "Clemens Peters"
-  },
-  "categories": [
-    "Formatters"
-  ],
-  "icon": "images/icon.png",
-  "galleryBanner": {
-    "color": "#C80000",
-    "theme": "dark"
-  },
-  "activationEvents": [
-    "onCommand:extension.formatJSON"
-  ],
-  "engines": {
-    "vscode": "^1.44.0"
-  },
-  "main": "./out/extension",
-  "contributes": {
-    "commands": [
-      {
-        "command": "extension.formatJSON",
-        "title": "Format JSON"
-      }
-    ]
-  },
-  "scripts": {
-    "vscode:prepublish": "tsc -p ./",
-    "compile": "tsc -watch -p ./"
-  },
-  "devDependencies": {
-    "@types/mocha": "^2.2.32",
-    "@types/node": "^14.14.6",
-    "@types/vscode": "^1.44.0",
-    "mocha": "^2.3.3",
-    "typescript": "^4.0.5"
-  },
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/clemenspeters/vscode-extension-format-json.git"
-  },
-  "homepage": "https://github.com/clemenspeters/vscode-extension-format-json/blob/master/README.md"
+	"name": "format-json",
+	"displayName": "vscode JSON formatter",
+	"version": "1.0.0",
+	"publisher": "ClemensPeters",
+	"description": "Convert file to file type json and format content.",
+	"author": {
+		"name": "Clemens Peters"
+	},
+	"categories": [
+		"Formatters"
+	],
+	"icon": "images/icon.png",
+	"galleryBanner": {
+		"color": "#C80000",
+		"theme": "dark"
+	},
+	"activationEvents": [
+		"onCommand:extension.formatJSON"
+	],
+	"engines": {
+		"vscode": "^1.44.0"
+	},
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.formatJSON",
+				"title": "Format JSON"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.32",
+		"@types/node": "^14.14.6",
+		"@types/vscode": "^1.44.0",
+		"mocha": "^2.3.3",
+		"typescript": "^4.0.5"
+	},
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/clemenspeters/vscode-extension-format-json.git"
+	},
+	"homepage": "https://github.com/clemenspeters/vscode-extension-format-json/blob/master/README.md"
 }
