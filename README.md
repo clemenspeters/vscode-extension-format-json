@@ -4,6 +4,10 @@ Just run `Format JSON` to set the language of the current
 file to JSON and format the content in one step.  
 Also works in new Untitled (not saved) files.
 
+## Usage
+
+![usage](images/json-formatter-480.gif)
+
 ## Background
 
 Before I always did
