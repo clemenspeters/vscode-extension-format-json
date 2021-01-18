@@ -1,4 +1,4 @@
-# Visual Studio Code JSON Formatting Extension
+# JSON Formatting Extension for Visual Studio Code
 
 Just run `Format JSON` to set the language of the current  
 file to JSON and format the content in one step.  
