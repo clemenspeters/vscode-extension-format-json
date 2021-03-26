@@ -11,8 +11,9 @@ export function activate(context: ExtensionContext) {
       return;
     }
 
-    languages.setTextDocumentLanguage(activeEditor.document, languageId);
-    commands.executeCommand('editor.action.formatDocument');
+    languages.setTextDocumentLanguage(activeEditor.document, languageId).then(() => {
+      commands.executeCommand('editor.action.formatDocument');
+    })
   };
 
   context.subscriptions.push(commands.registerCommand(command, commandHandler));
