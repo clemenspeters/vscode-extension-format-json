@@ -12,7 +12,7 @@ Also works in new Untitled (not saved) files.
 
 Before I always did
 
-1. `Cmd + K` `M`
+1. `Cmd + K` and then `M` to complete the command
 2. Type JSON
 3. Hit Enter
 4. `Option + Shift + F` to format the content
