@@ -1,7 +1,7 @@
 {
 	"name": "format-json",
 	"displayName": "JSON formatter",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"publisher": "ClemensPeters",
 	"description": "Convert file to file type json and format content.",
 	"author": {
