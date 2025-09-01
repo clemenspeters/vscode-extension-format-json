@@ -18,3 +18,8 @@ Before I always did
 4. `Option + Shift + F` to format the content
 
 Now it is just `Cmd + Shift + P` and then `Format JSON`.
+
+## Privacy
+
+This extension does not collect, transmit, or store any personal data or telemetry.  
+All operations run locally in your editor.
