@@ -4,6 +4,7 @@ on:
   push:
     tags:
       - 'v*' # e.g., v1.0.4
+  workflow_dispatch:
 
 jobs:
   publish:
@@ -27,12 +28,12 @@ jobs:
           if [ "$PKG_VERSION" != "$TAG" ]; then
             echo "package.json version ($PKG_VERSION) != tag ($TAG)"; exit 1; fi
 
-      - name: Publish to VS Marketplace
-        env:
-          VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
-        run: npx vsce publish -p "$VSCE_TOKEN"
-
       - name: Publish to Open VSX
         env:
           OVSX_TOKEN: ${{ secrets.OVSX_TOKEN }}
         run: npx ovsx publish -p "$OVSX_TOKEN"
+
+      - name: Publish to VS Marketplace
+        env:
+          VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
+        run: npx vsce publish -p "$VSCE_TOKEN"
